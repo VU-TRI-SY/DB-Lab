@@ -1,0 +1,256 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --header-heigh: 135px;
+    --header-color: rgb(146 172 238 / 90%);
+    --primary-color: rgba(40, 57, 101, 1); /*26643b*/ 
+    --green-1: rgba(40, 57, 101, .9);
+    --green-2: rgba(40, 57, 101, .5);
+    --lightGreen-1: rgba(142, 157, 197, 0.5);
+    --lightGreen-2: rgba(227, 234, 250, 0.7);
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    background-color: var(--lightGreen-2);
+    height: 100vh;
+}
+
+.header{
+    background-color: var(--header-color);
+    height: var(--header-heigh);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.nav{
+    height: 100%;
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__icon{
+    margin-left: 30px;
+}
+
+.header-icon{
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 86px;
+}
+
+.header__btn-group{
+    display: flex;
+    margin-right: 30px;
+}
+
+.btn{
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.home-btn{
+    margin-right: 32px;
+}
+
+.log-in-btn{
+    margin-left: 32px;
+}
+
+.btn-link{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 24px;
+    display: block;
+    text-decoration:  none;
+}
+
+/* .home-btn__link{ 
+} */
+
+
+/* Intro */
+.whyUs{
+    margin-top: 135px;
+    padding: 100px 0;
+}
+
+.whyUs__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.whyUs__left {
+    text-align: center;
+}
+
+.whyUs__title {
+    font-size: 18px;
+    color: #3b413a;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.whyUs__text {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.whyUs__items__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.whyUs__item {
+    background: var(--lightGreen-1);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.whyUs__item__icon {
+    max-width: 56px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.whyUs__item__icon img{
+    width: 65px;
+}
+
+.whyUs__item__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #3e433d;
+}
+
+@media only screen and (min-width: 768px) {
+    .whyUs__wrapper {
+        flex-direction: row;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .whyUs__left {
+        flex: 4;
+        text-align: left;
+    }
+
+    .whyUs__right {
+        flex: 3;
+    }
+
+    .whyUs__title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .whyUs__text {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .whyUs__items__wrapper {
+        gap: 15px;
+    }
+
+    .whyUs__item {
+        padding: 20px;
+    }
+
+    .whyUs__item__icon {
+        max-width: 65px;
+        margin-bottom: 15px;
+    }
+
+    .whyUs__item__text {
+        font-size: 18px;
+    }
+}
+
+/* footer */
+#storeInfor {
+    padding-bottom: 100px;
+}
+
+.storeInfor__wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.storeInfor__item {
+    background-color: var(--lightGreen-1);
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 12px;
+    width: 150px;
+}
+
+.storeInfor__item + .storeInfor__item{
+    margin-left: 40px;
+}
+.storeInfor__icon {
+    width: 30px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.storeInfor__title {
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 500;
+    margin-bottom: 5px;
+    line-height: 1.1em;
+    color: #3b413a;
+}
+
+.storeInfor__text {
+    font-size: 14px;
+    line-height: 12px;
+    color: #3e433d;
+}
+
+@media only screen and (min-width: 768px) {
+    .storeInfor__wrapper {
+        gap: 20px;
+    }
+
+    .storeInfor__item {
+        min-width: 200px;
+        padding: 40px 0;
+    }
+
+    .storeInfor__icon {
+        width: 47px;
+        margin-bottom: 25px;
+    }
+
+    .storeInfor__title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .storeInfor__text {
+        font-size: 16px;
+    }
+}
